@@ -263,6 +263,10 @@ static const CGFloat kJSSubtitleLabelHeight = 15.0f;
     [self configureAvatarImageView:imageView forMessageType:[self messageType]];
 }
 
+- (void)setBubbleImageView:(UIImageView *)bubbleImageView {
+    _bubbleView.bubbleImageView.image = bubbleImageView.image;
+}
+
 #pragma mark - Getters
 
 - (JSBubbleMessageType)messageType

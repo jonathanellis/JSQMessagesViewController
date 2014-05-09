@@ -246,6 +246,7 @@
     [cell setMessage:message];
     [cell setAvatarImageView:avatar];
     [cell setBackgroundColor:tableView.backgroundColor];
+    [cell setBubbleImageView:bubbleImageView];
 	
     if ([self.delegate respondsToSelector:@selector(configureCell:atIndexPath:)]) {
         [self.delegate configureCell:cell atIndexPath:indexPath];
